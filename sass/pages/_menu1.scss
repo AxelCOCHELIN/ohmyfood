@@ -1,0 +1,130 @@
+.menu {
+  & a {
+    color: $color-secondary;
+    text-decoration: none;
+  }
+}
+
+.title__menu {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: $title-size * 0.75;
+  margin-bottom: 40px;
+  margin-top: 80px;
+}
+
+.main__menu--variation1 {
+  width: 1184px;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-back-first;
+  box-shadow: 0px 0px 5px 6px #f1f1f1;
+  margin-bottom: $margin * 2;
+  margin-top: 0;
+  color: $color-font-first;
+  font-family: "Segoe print";
+  line-height: 50px;
+}
+
+.section {
+  &__header--variation1 {
+    font-family: "Devonshire";
+    width: 100%;
+    box-shadow: none;
+    margin-bottom: 0;
+    height: fit-content;
+    & i {
+      font-size: $logo-size;
+      background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-top: 90px;
+      padding-bottom: 30px;
+    }
+    & h3 {
+      font-size: $title-size;
+      padding-bottom: 50px;
+      margin: 0;
+      font-weight: normal;
+    }
+  }
+  &__menu--variation1 {
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+    height: fit-content;
+    margin-bottom: 50px;
+    & h4 {
+      display: flex;
+      justify-content: center;
+      font-family: "Segoe print";
+      font-size: map-get($map: $font-size, $key: chic);
+      background: linear-gradient(
+          to top,
+          $color-font-first 0%,
+          $color-font-first 4px,
+          transparent 5px
+        )
+        no-repeat;
+      background-size: 0 100%;
+      transition: background-size 0.5s;
+      &:hover {
+        background-size: 100% 100%;
+      }
+    }
+  }
+
+  &__footer--variation1 {
+    font-family: "Devonshire";
+    width: 100%;
+    box-shadow: none;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & i {
+      font-size: $logo-size / 2;
+      background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-right: 20px;
+    }
+    & h3 {
+      align-self: center;
+      margin: 0;
+      font-weight: normal;
+      font-size: $logo-size / 2;
+    }
+  }
+}
+
+.bloc__title1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  & img {
+    max-width: 250px;
+    max-height: 50px;
+  }
+}
+
+.bloc__dishes1 {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  font-size: map-get($map: $font-size, $key: text);
+  & ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.prices1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: bold;
+}
