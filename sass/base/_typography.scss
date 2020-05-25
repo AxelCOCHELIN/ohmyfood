@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Croissant";
+  src: url("../../fonts/CroissantOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Dancing";
+  src: url("../../fonts/DancingScript-Regular.otf");
+}
+
+@font-face {
+  font-family: "Kaushan";
+  src: url("../../fonts/KaushanScript-Regular.otf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto";
+  src: url("../../fonts/NotoSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Tinos";
+  src: url("../../fonts/Tinos-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Devonshire";
+  src: url("../../fonts/Devonshire-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../../fonts/Montserrat-Bold.ttf");
+}
+
+body {
+  font-family: "Montserrat", "Segoe print", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: map-get($map: $font-size, $key: title);
+  font-family: "Montserrat-Bold";
+  letter-spacing: -4px;
+}
+
+button {
+  font-family: "Montserrat";
+  font-size: map-get($map: $font-size, $key: button);
+}
+
+footer {
+  font-size: map-get($map: $font-size, $key: link);
+}
+
+section {
+  & h2 {
+    font-size: map-get($map: $font-size, $key: name);
+  }
+  & p {
+    font-size: map-get($map: $font-size, $key: menu);
+  }
+}
+
+.menu__first {
+  color: #562f37;
+  & h2 {
+    font-family: "Devonshire";
+    font-weight: lighter;
+  }
+  & p {
+    font-family: "Segoe print";
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.menu__second {
+  & h2 {
+    font-family: "Croissant";
+    font-weight: lighter;
+    font-size: map-get($map: $font-size, $key: chic);
+  }
+  & p {
+    font-family: "Noto";
+    font-weight: 900;
+  }
+}
+.menu__third {
+  & h2 {
+    font-family: "Dancing";
+    font-weight: lighter;
+  }
+  & p {
+    font-family: "Segoe print";
+  }
+}
+.menu__fourth {
+  & h2 {
+    font-family: "Kaushan";
+    font-weight: lighter;
+  }
+  & p {
+    font-family: "Segoe print";
+  }
+}

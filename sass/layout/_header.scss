@@ -1,0 +1,9 @@
+header {
+  background-color: $color-primary;
+  color: $color-secondary;
+  height: map-get($map: $bloc-size, $key: header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #a1c181;
+}
