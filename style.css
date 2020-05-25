@@ -20,39 +20,39 @@
 }
 @font-face {
   font-family: "Croissant";
-  src: url("../../fonts/CroissantOne-Regular.ttf");
+  src: url("../fonts/CroissantOne-Regular.ttf");
 }
 @font-face {
   font-family: "Dancing";
-  src: url("../../fonts/DancingScript-Regular.otf");
+  src: url("../fonts/DancingScript-Regular.otf");
 }
 @font-face {
   font-family: "Kaushan";
-  src: url("../../fonts/KaushanScript-Regular.otf");
+  src: url("../fonts/KaushanScript-Regular.otf");
 }
 @font-face {
   font-family: "Lato";
-  src: url("../../fonts/Lato-Regular.ttf");
+  src: url("../fonts/Lato-Regular.ttf");
 }
 @font-face {
   font-family: "Noto";
-  src: url("../../fonts/NotoSerif-Regular.ttf");
+  src: url("../fonts/NotoSerif-Regular.ttf");
 }
 @font-face {
   font-family: "Tinos";
-  src: url("../../fonts/Tinos-Regular.ttf");
+  src: url("../fonts/Tinos-Regular.ttf");
 }
 @font-face {
   font-family: "Devonshire";
-  src: url("../../fonts/Devonshire-Regular.ttf");
+  src: url("../fonts/Devonshire-Regular.ttf");
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-Regular.ttf");
+  src: url("../fonts/Montserrat-Regular.ttf");
 }
 @font-face {
   font-family: "Montserrat-Bold";
-  src: url("../../fonts/Montserrat-Bold.ttf");
+  src: url("../fonts/Montserrat-Bold.ttf");
 }
 body {
   font-family: "Montserrat", "Segoe print", Tahoma, Geneva, Verdana, sans-serif;
@@ -342,7 +342,8 @@ footer a:hover {
   justify-content: center;
   font-family: "Segoe print";
   font-size: 34px;
-  background: linear-gradient(to top, #562f37 0%, #562f37 4px, transparent 5px) no-repeat;
+  background: linear-gradient(to top, #562f37 0%, #562f37 4px, transparent 5px)
+    no-repeat;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
@@ -478,7 +479,8 @@ footer a:hover {
 }
 #entrée2 h4 {
   color: #c77412;
-  background: linear-gradient(to top, #c77412 0%, #c77412 4px, transparent 5px) no-repeat;
+  background: linear-gradient(to top, #c77412 0%, #c77412 4px, transparent 5px)
+    no-repeat;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
@@ -491,7 +493,8 @@ footer a:hover {
 }
 #plat2 h4 {
   color: #a56799;
-  background: linear-gradient(to top, #a56799 0%, #a56799 4px, transparent 5px) no-repeat;
+  background: linear-gradient(to top, #a56799 0%, #a56799 4px, transparent 5px)
+    no-repeat;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
@@ -504,7 +507,8 @@ footer a:hover {
 }
 #dessert2 h4 {
   color: #6e4ccc;
-  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 4px, transparent 5px) no-repeat;
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 4px, transparent 5px)
+    no-repeat;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
@@ -599,7 +603,8 @@ footer a:hover {
   justify-content: center;
   font-family: "Segoe print";
   font-size: 34px;
-  background: linear-gradient(to top, black 0%, black 4px, transparent 5px) no-repeat;
+  background: linear-gradient(to top, black 0%, black 4px, transparent 5px)
+    no-repeat;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
@@ -692,7 +697,8 @@ footer a:hover {
   justify-content: center;
   font-family: "Segoe print";
   font-size: 34px;
-  background: linear-gradient(to top, black 0%, black 4px, transparent 5px) no-repeat;
+  background: linear-gradient(to top, black 0%, black 4px, transparent 5px)
+    no-repeat;
   background-size: 0 100%;
   transition: background-size 0.5s;
 }
