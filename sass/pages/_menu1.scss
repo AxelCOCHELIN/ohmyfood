@@ -16,6 +16,7 @@
 
 .main__menu--variation1 {
   width: 1184px;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: $color-back-first;
@@ -31,9 +32,9 @@
   &__header--variation1 {
     font-family: "Devonshire";
     width: 100%;
+    height: auto;
     box-shadow: none;
     margin-bottom: 0;
-    height: fit-content;
     & i {
       font-size: $logo-size;
       background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
@@ -51,9 +52,9 @@
   }
   &__menu--variation1 {
     width: 100%;
+    height: auto;
     box-shadow: none;
     margin: 0;
-    height: fit-content;
     margin-bottom: 50px;
     & h4 {
       display: flex;
@@ -78,8 +79,9 @@
   &__footer--variation1 {
     font-family: "Devonshire";
     width: 100%;
+    height: auto;
     box-shadow: none;
-    height: fit-content;
+
     display: flex;
     flex-direction: row;
     justify-content: center;

@@ -16,6 +16,7 @@
 
 .main__menu--variation3 {
   width: 1184px;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: $color-back-third;
@@ -34,7 +35,7 @@
     width: 100%;
     box-shadow: none;
     margin-bottom: 0;
-    height: fit-content;
+    height: auto;
     & h3 {
       width: 100%;
       display: flex;
@@ -57,7 +58,7 @@
     width: 100%;
     box-shadow: none;
     margin: 0;
-    height: fit-content;
+    height: auto;
     margin-bottom: 50px;
     & h4 {
       display: flex;

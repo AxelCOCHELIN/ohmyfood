@@ -16,6 +16,7 @@
 
 .main__menu--variation4 {
   width: 1184px;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: $color-back-fourth;
@@ -34,7 +35,7 @@
     width: 100%;
     box-shadow: none;
     margin-bottom: 0;
-    height: fit-content;
+    height: auto;
     & h3 {
       font-size: $title-size;
       font-weight: normal;
@@ -50,7 +51,7 @@
     width: 100%;
     box-shadow: none;
     margin: 0;
-    height: fit-content;
+    height: auto;
     margin-bottom: 50px;
     & h4 {
       display: flex;

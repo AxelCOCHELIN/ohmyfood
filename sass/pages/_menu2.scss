@@ -16,6 +16,7 @@
 
 .main__menu--variation2 {
   width: 1184px;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: $color-back-second;
@@ -29,9 +30,9 @@
 .section {
   &__header--variation2 {
     width: 100%;
+    height: auto;
     box-shadow: none;
     margin-bottom: 0;
-    height: fit-content;
     & h3 {
       font-size: $title-size;
       padding-bottom: 50px;
@@ -54,7 +55,7 @@
     width: 100%;
     box-shadow: none;
     margin: 0;
-    height: fit-content;
+    height: auto;
     margin-bottom: 50px;
     & h4 {
       display: flex;
