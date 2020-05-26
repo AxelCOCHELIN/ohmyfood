@@ -7,7 +7,7 @@ footer {
   align-items: center;
   position: fixed;
   bottom: 0;
-  border-top: 2px solid #a1c181;
+  border-top: 2px solid $color-border-header;
   & a {
     color: $color-secondary;
     text-decoration: none;

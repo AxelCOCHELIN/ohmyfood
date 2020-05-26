@@ -109,6 +109,7 @@ button {
 
 .menu__third {
   background-color: $color-back-third;
+
   & p {
     color: $color-font-third;
   }
@@ -120,6 +121,9 @@ button {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: 80%;
+    display: flex;
+    justify-content: center;
   }
 }
 
