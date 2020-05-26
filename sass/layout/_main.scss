@@ -4,10 +4,10 @@ body {
 
 a {
   text-decoration: none;
+  width: 400px;
 }
 
 main {
-  max-width: map-get($map: $bloc-size, $key: main-width);
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -18,42 +18,60 @@ main {
 }
 
 .menu__row {
-  width: map-get($map: $bloc-size, $key: main-width);
+  max-width: 1200px;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media screen and (max-width: 1060px) {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 section {
-  width: 45.66%;
-  height: map-get($map: $bloc-size, $key: section-height);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 5px 6px #f1f1f1;
-  margin-bottom: $margin;
   & .link {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 700px;
+    flex-wrap: wrap;
+    width: 400px;
+    max-height: 700px;
     transition: all 400ms;
     opacity: 1;
+    @media screen and (max-width: 1060px) {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
     &:hover {
-      transform: scale(1.2);
+      transform: scale(1.1);
       opacity: 0.5;
     }
-  }
-  & p {
-    margin-top: 0;
+    & p {
+      margin-top: 0;
+    }
   }
 }
 
 button {
-  width: map-get($map: $bloc-size, $key: button-width);
+  width: 50%;
   height: map-get($map: $bloc-size, $key: button-height);
   justify-self: center;
   background-color: $color-primary;
@@ -61,6 +79,16 @@ button {
   border-radius: 20px;
   box-shadow: none;
   border: none;
+  @media screen and (max-width: 1060px) {
+    width: 536px;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 95%;
+  }
   & span {
     animation-name: PtsSuspension;
     animation-duration: 1000ms;
@@ -89,6 +117,27 @@ button {
     -webkit-text-fill-color: transparent;
     font-size: map-get($map: $font-size, $key: button);
   }
+  max-width: 536px;
+  width: 45.66%;
+  height: map-get($map: $bloc-size, $key: section-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 6px #f1f1f1;
+  margin-bottom: $margin;
+  @media screen and (max-width: 1060px) {
+    flex-direction: column;
+    width: 536px;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .menu__second {
@@ -104,6 +153,27 @@ button {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  max-width: 536px;
+  width: 45.66%;
+  height: map-get($map: $bloc-size, $key: section-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 6px #f1f1f1;
+  margin-bottom: $margin;
+  @media screen and (max-width: 1060px) {
+    flex-direction: column;
+    width: 536px;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -121,9 +191,31 @@ button {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 80%;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
+    width: 100%;
+  }
+  max-width: 536px;
+  width: 45.66%;
+  height: map-get($map: $bloc-size, $key: section-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 6px #f1f1f1;
+  margin-bottom: $margin;
+  @media screen and (max-width: 1060px) {
+    flex-direction: column;
+    width: 536px;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -136,5 +228,26 @@ button {
     background: -webkit-linear-gradient(bottom right, #bfff7e, #3d9339);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  max-width: 536px;
+  width: 45.66%;
+  height: map-get($map: $bloc-size, $key: section-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px 6px #f1f1f1;
+  margin-bottom: $margin;
+  @media screen and (max-width: 1060px) {
+    flex-direction: column;
+    width: 536px;
+    align-items: center;
+  }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
   }
 }

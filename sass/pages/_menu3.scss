@@ -15,7 +15,8 @@
 }
 
 .main__menu--variation3 {
-  width: 1184px;
+  max-width: 1200px;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -36,6 +37,10 @@
     box-shadow: none;
     margin-bottom: 0;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     & h3 {
       width: 100%;
       display: flex;
@@ -60,6 +65,10 @@
     margin: 0;
     height: auto;
     margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     & h4 {
       display: flex;
       justify-content: center;

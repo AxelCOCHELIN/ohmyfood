@@ -15,7 +15,8 @@
 }
 
 .main__menu--variation1 {
-  width: 1184px;
+  max-width: 1200px;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -35,6 +36,22 @@
     height: auto;
     box-shadow: none;
     margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 1060px) {
+      flex-direction: column;
+      width: 536px;
+      align-items: center;
+    }
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
     & i {
       font-size: $logo-size;
       background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
@@ -56,6 +73,7 @@
     box-shadow: none;
     margin: 0;
     margin-bottom: 50px;
+
     & h4 {
       display: flex;
       justify-content: center;
