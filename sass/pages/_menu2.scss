@@ -36,7 +36,7 @@
       font-size: $title-size;
       padding-bottom: 50px;
       margin: 0;
-      font-family: "Croissant";
+      font-family: "Croissant One";
       font-size: $title-size * 0.75;
       background: -webkit-linear-gradient(
         bottom right,
@@ -60,19 +60,6 @@
       justify-content: center;
       font-family: "Sitka";
       font-size: map-get($map: $font-size, $key: chic);
-    }
-  }
-  &__footer--variation2 {
-    font-family: "Devonshire";
-    width: 100%;
-    box-shadow: none;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    & p {
-      align-self: center;
-      margin: 0;
     }
   }
 }
