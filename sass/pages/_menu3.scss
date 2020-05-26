@@ -36,7 +36,11 @@
     margin-bottom: 0;
     height: fit-content;
     & h3 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
       font-size: $title-size;
+      font-weight: normal;
       padding-bottom: 100px;
       margin: 0;
       background: -webkit-linear-gradient(

@@ -605,7 +605,11 @@ footer a:hover {
   height: fit-content;
 }
 .section__header--variation3 h3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   font-size: 80px;
+  font-weight: normal;
   padding-bottom: 100px;
   margin: 0;
   background: -webkit-linear-gradient(bottom right, #2795fb, #0431df);
@@ -699,6 +703,7 @@ footer a:hover {
 }
 .section__header--variation4 h3 {
   font-size: 80px;
+  font-weight: normal;
   padding-top: 194px;
   padding-bottom: 100px;
   margin: 0;
