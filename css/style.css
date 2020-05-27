@@ -813,8 +813,12 @@ footer a:hover {
 @media screen and (max-width: 450px) {
   .bloc__dishes {
     font-size: 8px;
-    font-weight: bold;
     width: 95%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .bloc__dishes {
+    width: 97%;
   }
 }
 .bloc__dishes ul {
@@ -1112,6 +1116,7 @@ footer a:hover {
 @media screen and (max-width: 650px) {
   .section__header--variation3 h3 {
     font-size: 60px;
+    padding-top: 100px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -1226,6 +1231,7 @@ footer a:hover {
 @media screen and (max-width: 650px) {
   .section__header--variation4 h3 {
     font-size: 60px;
+    padding-top: 100px;
   }
 }
 @media screen and (max-width: 400px) {
