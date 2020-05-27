@@ -1,5 +1,14 @@
-.mention {
+.mentions {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 75%;
+  & h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 650px) {
+      font-size: 16px;
+    }
+  }
 }

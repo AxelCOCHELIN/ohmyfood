@@ -140,6 +140,17 @@ h1 {
   font-family: "Montserrat";
   letter-spacing: -4px;
   font-weight: 700;
+  @media screen and (max-width: 1060px) {
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 810px) {
+    font-size: 70px;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 60px;
+  }
 }
 
 button {

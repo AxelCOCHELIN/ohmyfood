@@ -12,6 +12,15 @@
   font-size: $title-size * 0.75;
   margin-bottom: 40px;
   margin-top: 80px;
+  @media screen and (max-width: 1060px) {
+    font-size: 60px;
+  }
+  @media screen and (max-width: 810px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 40px;
+  }
 }
 
 .main__menu--variation1 {
@@ -27,6 +36,11 @@
   color: $color-font-first;
   font-family: "Segoe print";
   line-height: 50px;
+  @media screen and (max-width: 810px) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .section {
@@ -40,18 +54,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 1060px) {
-      flex-direction: column;
-      width: 536px;
-      align-items: center;
-    }
-    @media screen and (max-width: 600px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-    }
     & i {
       font-size: $logo-size;
       background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
@@ -59,12 +61,30 @@
       -webkit-text-fill-color: transparent;
       padding-top: 90px;
       padding-bottom: 30px;
+      @media screen and (max-width: 1060px) {
+        font-size: 100px;
+      }
+      @media screen and (max-width: 810px) {
+        font-size: 90px;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 80px;
+      }
     }
     & h3 {
       font-size: $title-size;
       padding-bottom: 50px;
       margin: 0;
       font-weight: normal;
+      @media screen and (max-width: 1060px) {
+        font-size: 80px;
+      }
+      @media screen and (max-width: 810px) {
+        font-size: 70px;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 60px;
+      }
     }
   }
   &__menu--variation1 {
@@ -73,7 +93,10 @@
     box-shadow: none;
     margin: 0;
     margin-bottom: 50px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     & h4 {
       display: flex;
       justify-content: center;
@@ -88,6 +111,15 @@
         no-repeat;
       background-size: 0 100%;
       transition: background-size 0.5s;
+      @media screen and (max-width: 1060px) {
+        font-size: 24px;
+      }
+      @media screen and (max-width: 810px) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 16px;
+      }
       &:hover {
         background-size: 100% 100%;
       }
@@ -99,10 +131,14 @@
     width: 100%;
     height: auto;
     box-shadow: none;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 50px;
     & i {
       font-size: $logo-size / 2;
       background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
@@ -125,9 +161,22 @@
   align-items: center;
   justify-content: space-between;
   width: 85%;
+
   & img {
     max-width: 250px;
     max-height: 50px;
+    @media screen and (max-width: 1060px) {
+      max-width: 200px;
+      max-height: 40px;
+    }
+    @media screen and (max-width: 810px) {
+      max-width: 150px;
+      max-height: 30px;
+    }
+    @media screen and (max-width: 650px) {
+      max-width: 100px;
+      max-height: 25px;
+    }
   }
 }
 
@@ -136,6 +185,15 @@
   justify-content: space-between;
   width: 80%;
   font-size: map-get($map: $font-size, $key: text);
+  @media screen and (max-width: 1060px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 810px) {
+    font-size: 14px;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 10px;
+  }
   & ul {
     list-style-type: none;
     padding: 0;
