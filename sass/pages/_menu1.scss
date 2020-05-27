@@ -21,6 +21,9 @@
   @media screen and (max-width: 650px) {
     font-size: 40px;
   }
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
+  }
 }
 
 .main__menu--variation1 {
@@ -70,6 +73,9 @@
       @media screen and (max-width: 650px) {
         font-size: 80px;
       }
+      @media screen and (max-width: 400px) {
+        font-size: 70px;
+      }
     }
     & h3 {
       font-size: $title-size;
@@ -84,6 +90,9 @@
       }
       @media screen and (max-width: 650px) {
         font-size: 60px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 50px;
       }
     }
   }
@@ -120,6 +129,9 @@
       @media screen and (max-width: 650px) {
         font-size: 16px;
       }
+      @media screen and (max-width: 400px) {
+        font-size: 12px;
+      }
       &:hover {
         background-size: 100% 100%;
       }
@@ -145,23 +157,49 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       padding-right: 20px;
+      @media screen and (max-width: 1060px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 810px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 30px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 20px;
+      }
     }
     & h3 {
       align-self: center;
       margin: 0;
       font-weight: normal;
       font-size: $logo-size / 2;
+      @media screen and (max-width: 1060px) {
+        font-size: 50px;
+      }
+      @media screen and (max-width: 810px) {
+        font-size: 40px;
+      }
+      @media screen and (max-width: 650px) {
+        font-size: 30px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 20px;
+      }
     }
   }
 }
 
-.bloc__title1 {
+.bloc__title {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 85%;
-
+  @media screen and (max-width: 450px) {
+    width: 95%;
+  }
   & img {
     max-width: 250px;
     max-height: 50px;
@@ -177,10 +215,14 @@
       max-width: 100px;
       max-height: 25px;
     }
+    @media screen and (max-width: 450px) {
+      max-width: 75px;
+      max-height: 20px;
+    }
   }
 }
 
-.bloc__dishes1 {
+.bloc__dishes {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -193,6 +235,10 @@
   }
   @media screen and (max-width: 650px) {
     font-size: 10px;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 8px;
+    width: 95%;
   }
   & ul {
     list-style-type: none;

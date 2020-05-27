@@ -55,6 +55,9 @@
       @media screen and (max-width: 650px) {
         font-size: 60px;
       }
+      @media screen and (max-width: 450px) {
+        font-size: 42px;
+      }
     }
   }
   &__menu--variation3 {
@@ -85,54 +88,13 @@
       @media screen and (max-width: 650px) {
         font-size: 16px;
       }
+      @media screen and (max-width: 400px) {
+        font-size: 12px;
+      }
       &:hover {
         background-size: 100% 100%;
       }
     }
-  }
-}
-
-.bloc__title3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 95%;
-  & img {
-    max-width: 250px;
-    max-height: 50px;
-    @media screen and (max-width: 1060px) {
-      max-width: 200px;
-      max-height: 40px;
-    }
-    @media screen and (max-width: 810px) {
-      max-width: 150px;
-      max-height: 30px;
-    }
-    @media screen and (max-width: 650px) {
-      max-width: 100px;
-      max-height: 25px;
-    }
-  }
-}
-
-.bloc__dishes3 {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  font-size: map-get($map: $font-size, $key: text);
-  @media screen and (max-width: 1060px) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: 810px) {
-    font-size: 14px;
-  }
-  @media screen and (max-width: 650px) {
-    font-size: 10px;
-  }
-  & ul {
-    list-style-type: none;
-    padding: 0;
   }
 }
 
