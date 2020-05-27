@@ -156,23 +156,42 @@ h1 {
 button {
   font-family: "Montserrat";
   font-size: map-get($map: $font-size, $key: button);
+  @media screen and (max-width: 1060px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 30px;
+  }
 }
 
 footer {
   font-size: map-get($map: $font-size, $key: link);
+  @media screen and (max-width: 1060px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 20px;
+  }
 }
 
 section {
   & h2 {
     font-size: map-get($map: $font-size, $key: name);
+    @media screen and (max-width: 1060px) {
+      font-size: 34px;
+    }
   }
   & p {
     font-size: map-get($map: $font-size, $key: menu);
+    @media screen and (max-width: 1060px) {
+      font-size: 46px;
+    }
   }
 }
 
 .menu__first {
   color: #562f37;
+
   & h2 {
     font-family: "Devonshire";
     font-weight: lighter;
@@ -189,6 +208,9 @@ section {
     font-family: "Croissant One";
     font-weight: lighter;
     font-size: map-get($map: $font-size, $key: chic);
+    @media screen and (max-width: 1060px) {
+      font-size: 24px;
+    }
   }
   & p {
     font-family: "Noto Serif";

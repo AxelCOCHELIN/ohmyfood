@@ -120,16 +120,46 @@ button {
   font-family: "Montserrat";
   font-size: 50px;
 }
+@media screen and (max-width: 1060px) {
+  button {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 650px) {
+  button {
+    font-size: 30px;
+  }
+}
 
 footer {
   font-size: 40px;
+}
+@media screen and (max-width: 1060px) {
+  footer {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    font-size: 20px;
+  }
 }
 
 section h2 {
   font-size: 44px;
 }
+@media screen and (max-width: 1060px) {
+  section h2 {
+    font-size: 34px;
+  }
+}
 section p {
   font-size: 56px;
+}
+@media screen and (max-width: 1060px) {
+  section p {
+    font-size: 46px;
+  }
 }
 
 .menu__first {
@@ -149,6 +179,11 @@ section p {
   font-family: "Croissant One";
   font-weight: lighter;
   font-size: 34px;
+}
+@media screen and (max-width: 1060px) {
+  .menu__second h2 {
+    font-size: 24px;
+  }
 }
 .menu__second p {
   font-family: "Noto Serif";
@@ -187,7 +222,11 @@ body {
 
 a {
   text-decoration: none;
-  width: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -210,7 +249,6 @@ main {
 @media screen and (max-width: 1060px) {
   .menu__row {
     flex-direction: column;
-    width: 100%;
     align-items: center;
   }
 }
@@ -220,36 +258,19 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 100%;
   }
 }
 
 section .link {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 400px;
   max-height: 700px;
   transition: all 400ms;
   opacity: 1;
-}
-@media screen and (max-width: 1060px) {
-  section .link {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 600px) {
-  section .link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
 }
 section .link:hover {
   transform: scale(1.1);

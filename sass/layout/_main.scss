@@ -4,7 +4,11 @@ body {
 
 a {
   text-decoration: none;
-  width: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -25,7 +29,7 @@ main {
   justify-content: space-between;
   @media screen and (max-width: 1060px) {
     flex-direction: column;
-    width: 100%;
+
     align-items: center;
   }
   @media screen and (max-width: 600px) {
@@ -33,33 +37,20 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 100%;
   }
 }
 
 section {
   & .link {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 400px;
     max-height: 700px;
     transition: all 400ms;
     opacity: 1;
-    @media screen and (max-width: 1060px) {
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-    }
-    @media screen and (max-width: 600px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-    }
     &:hover {
       transform: scale(1.1);
       opacity: 0.5;
