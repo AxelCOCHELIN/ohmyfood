@@ -208,7 +208,7 @@ section {
     font-family: "Croissant One";
     font-weight: lighter;
     font-size: map-get($map: $font-size, $key: chic);
-    @media screen and (max-width: 1060px) {
+    @media screen and (max-width: 1200px) {
       font-size: 24px;
     }
   }
@@ -219,7 +219,7 @@ section {
 }
 .menu__third {
   & h2 {
-    font-family: "Dancing Script";
+    font-family: "Dancing Script", Arial;
     font-weight: lighter;
   }
   & p {
