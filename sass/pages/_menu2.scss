@@ -2,6 +2,7 @@
   max-width: 1200px;
   width: 90%;
   height: auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   background-color: $color-back-second;
@@ -10,11 +11,6 @@
   line-height: 50px;
   margin-top: 0;
   padding-bottom: 100px;
-  @media screen and (max-width: 810px) {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 
 .section {
@@ -40,23 +36,14 @@
       );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      padding-top: 194px;
-      padding-bottom: 100px;
-      @media screen and (max-width: 1060px) {
-        font-size: 60px;
-      }
-      @media screen and (max-width: 810px) {
+      padding-top: 100px;
+      padding-bottom: 60px;
+      @media screen and (max-width: 991px) {
         font-size: 50px;
       }
-      @media screen and (max-width: 650px) {
+      @media screen and (max-width: 699px) {
         font-size: 40px;
-        padding-top: 100px;
-      }
-      @media screen and (max-width: 460px) {
-        font-size: 30px;
-      }
-      @media screen and (max-width: 350px) {
-        font-size: 25px;
+        text-align: center;
       }
     }
   }
@@ -75,17 +62,12 @@
       justify-content: center;
       font-family: "Sitka";
       font-size: map-get($map: $font-size, $key: chic);
-      @media screen and (max-width: 1060px) {
-        font-size: 24px;
+      @media screen and (max-width: 991px) {
+        font-size: 22px;
       }
-      @media screen and (max-width: 810px) {
-        font-size: 20px;
-      }
-      @media screen and (max-width: 650px) {
-        font-size: 16px;
-      }
-      @media screen and (max-width: 400px) {
-        font-size: 12px;
+      @media screen and (max-width: 699px) {
+        font-size: 18px;
+        text-align: center;
       }
     }
   }
@@ -156,40 +138,29 @@
   width: 95%;
   color: $color-font-second;
   & img {
-    max-width: 250px;
-    max-height: 50px;
-    @media screen and (max-width: 1060px) {
-      max-width: 200px;
-      max-height: 40px;
-    }
-    @media screen and (max-width: 810px) {
-      max-width: 150px;
-      max-height: 30px;
-    }
-    @media screen and (max-width: 650px) {
-      max-width: 100px;
-      max-height: 25px;
-    }
-    @media screen and (max-width: 400px) {
-      max-width: 75px;
-      max-height: 20px;
-    }
+    max-width: 25%;
+    max-height: 40px;
   }
 }
 
 .bloc__dishes2 {
   display: flex;
   flex-direction: column;
-
   width: 80%;
   & p {
     font-size: map-get($map: $font-size, $key: text);
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 699px) {
+      text-align: center;
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
   & span {
     display: inline-block;
     justify-self: flex-end;
     padding-left: 10px;
+    font-weight: bold;
   }
 }
