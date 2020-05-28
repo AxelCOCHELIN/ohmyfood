@@ -2,6 +2,21 @@ body {
   margin: 0;
 }
 
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu__row {
+  display: flex;
+  justify-content: space-evenly;
+  @media screen and (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+}
+
 a {
   text-decoration: none;
   width: 90%;
@@ -11,36 +26,68 @@ a {
   align-items: center;
 }
 
-main {
+button {
+  width: 50%;
+  height: map-get($map: $bloc-size, $key: button-height);
+  align-self: center;
+  background-color: $color-primary;
+  color: $color-secondary;
+  border-radius: 20px;
+  box-shadow: none;
+  border: none;
+  margin-bottom: 200px;
+  font-size: 50px;
+  @media screen and (max-width: 991px) {
+    width: 75%;
+    font-size: map-get($map: $font-size, $key: button);
+  }
+  @media screen and (max-width: 699px) {
+    font-size: 1.5rem;
+  }
+  & span {
+    animation-name: PtsSuspension;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+  }
+  & span:nth-child(2) {
+    animation-delay: 330ms;
+  }
+  & span:nth-child(3) {
+    animation-delay: 660ms;
+  }
+}
+
+.menu__first {
+  width: 20%;
+  height: 400px;
+  background-color: $color-back-first;
   display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-top: $margin;
-  margin-bottom: $margin * 2.5;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.menu__row {
-  max-width: 1200px;
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @media screen and (max-width: 1060px) {
-    flex-direction: column;
-
-    align-items: center;
+  box-shadow: 0px 0px 5px 6px #f1f1f1;
+  margin-bottom: $margin;
+  font-size: map-get($map: $font-size, $key: menu_title);
+  text-align: center;
+  @media screen and (max-width: 991px) {
+    width: 40%;
   }
-  @media screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  @media screen and (max-width: 699px) {
+    width: 80%;
   }
-}
-
-section {
+  & p {
+    color: $color-font-first;
+  }
+  & h2 {
+    margin-top: 0;
+    color: $color-font-first;
+  }
+  & i {
+    background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: map-get($map: $font-size, $key: button);
+  }
   & .link {
     width: 90%;
     display: flex;
@@ -61,78 +108,24 @@ section {
   }
 }
 
-button {
-  width: 50%;
-  height: map-get($map: $bloc-size, $key: button-height);
-  justify-self: center;
-  background-color: $color-primary;
-  color: $color-secondary;
-  border-radius: 20px;
-  box-shadow: none;
-  border: none;
-  @media screen and (max-width: 1060px) {
-    width: 536px;
-    align-items: center;
-  }
-  @media screen and (max-width: 600px) {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 95%;
-  }
-  & span {
-    animation-name: PtsSuspension;
-    animation-duration: 1000ms;
-    animation-iteration-count: infinite;
-  }
-  & span:nth-child(2) {
-    animation-delay: 330ms;
-  }
-  & span:nth-child(3) {
-    animation-delay: 660ms;
-  }
-}
-
-.menu__first {
-  background-color: $color-back-first;
-  & p {
-    color: $color-font-first;
-  }
-  & h2 {
-    margin-top: 0;
-    color: $color-font-first;
-  }
-  & i {
-    background: -webkit-linear-gradient(right, #f78f6a, #f04a5e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: map-get($map: $font-size, $key: button);
-  }
-  max-width: 536px;
-  width: 45.66%;
-  height: map-get($map: $bloc-size, $key: section-height);
+.menu__second {
+  width: 20%;
+  height: 400px;
+  background-color: $color-back-second;
+  font-size: map-get($map: $font-size, $key: menu_title);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   box-shadow: 0px 0px 5px 6px #f1f1f1;
   margin-bottom: $margin;
-  @media screen and (max-width: 1060px) {
-    flex-direction: column;
-    width: 536px;
-    align-items: center;
+  @media screen and (max-width: 991px) {
+    width: 40%;
   }
-  @media screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+  @media screen and (max-width: 699px) {
+    width: 80%;
   }
-}
-
-.menu__second {
-  background-color: $color-back-second;
   & p {
     color: $color-font-second;
   }
@@ -145,32 +138,39 @@ button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  max-width: 536px;
-  width: 45.66%;
-  height: map-get($map: $bloc-size, $key: section-height);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 0px 5px 6px #f1f1f1;
-  margin-bottom: $margin;
-  @media screen and (max-width: 1060px) {
-    flex-direction: column;
-    width: 536px;
-    align-items: center;
-  }
-  @media screen and (max-width: 600px) {
+
+  & .link {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 700px;
+    transition: all 400ms;
+    opacity: 1;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    & p {
+      margin-top: 0;
+    }
   }
 }
 
 .menu__third {
   background-color: $color-back-third;
-
+  width: 20%;
+  height: 400px;
+  font-size: map-get($map: $font-size, $key: menu_title);
+  text-align: center;
+  @media screen and (max-width: 991px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 699px) {
+    width: 80%;
+  }
   & p {
     color: $color-font-third;
   }
@@ -187,31 +187,45 @@ button {
     justify-content: center;
     width: 100%;
   }
-  max-width: 536px;
-  width: 45.66%;
-  height: map-get($map: $bloc-size, $key: section-height);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 5px 6px #f1f1f1;
   margin-bottom: $margin;
-  @media screen and (max-width: 1060px) {
-    flex-direction: column;
-    width: 536px;
-    align-items: center;
-  }
-  @media screen and (max-width: 600px) {
+  & .link {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 700px;
+    transition: all 400ms;
+    opacity: 1;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    & p {
+      margin-top: 0;
+    }
   }
 }
 
 .menu__fourth {
   background-color: $color-back-fourth;
+  width: 20%;
+  height: 400px;
+  font-size: map-get($map: $font-size, $key: menu_title);
+  text-align: center;
+  @media screen and (max-width: 991px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 699px) {
+    width: 80%;
+  }
   & p {
     color: $color-font-fourth;
   }
@@ -220,25 +234,29 @@ button {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  max-width: 536px;
-  width: 45.66%;
-  height: map-get($map: $bloc-size, $key: section-height);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 5px 6px #f1f1f1;
   margin-bottom: $margin;
-  @media screen and (max-width: 1060px) {
-    flex-direction: column;
-    width: 536px;
-    align-items: center;
-  }
-  @media screen and (max-width: 600px) {
+  & .link {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 700px;
+    transition: all 400ms;
+    opacity: 1;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    & p {
+      margin-top: 0;
+    }
   }
 }

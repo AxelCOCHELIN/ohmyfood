@@ -8,22 +8,11 @@ footer {
   position: fixed;
   bottom: 0;
   border-top: 2px solid $color-border-header;
-  @media screen and (max-width: 1060px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
   & a {
     color: $color-secondary;
     text-decoration: none;
     padding-left: $footer-padding;
     padding-right: $footer-padding;
-    @media screen and (max-width: 1060px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-    }
     &:nth-child(2) {
       display: flex;
       justify-content: flex-end;
