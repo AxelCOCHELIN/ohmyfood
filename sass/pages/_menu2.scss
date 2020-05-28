@@ -128,6 +128,7 @@
     }
   }
 }
+
 #dessert2 {
   color: #6e4ccc;
   & h4 {
@@ -178,32 +179,17 @@
 
 .bloc__dishes2 {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
-  font-size: map-get($map: $font-size, $key: dish);
-  font-family: "Sitka";
-  @media screen and (max-width: 1060px) {
-    font-size: 16px;
-  }
-  @media screen and (max-width: 810px) {
-    font-size: 14px;
-  }
-  @media screen and (max-width: 650px) {
-    font-size: 12px;
-    width: 85%;
-  }
-  @media screen and (max-width: 450px) {
-    font-size: 10px;
-    width: 95%;
-  }
-  & ul {
-    list-style-type: none;
-    padding: 0;
-  }
-}
-
-.prices2 {
-  display: flex;
   flex-direction: column;
-  align-items: flex-end;
+
+  width: 80%;
+  & p {
+    font-size: map-get($map: $font-size, $key: text);
+    display: flex;
+    justify-content: space-between;
+  }
+  & span {
+    display: inline-block;
+    justify-self: flex-end;
+    padding-left: 10px;
+  }
 }
