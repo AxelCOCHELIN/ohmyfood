@@ -151,7 +151,7 @@ footer {
 }
 
 .menu__third h2 {
-  font-family: "Dancing Script", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Dancing Script", Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: lighter;
 }
 .menu__third p {
@@ -159,7 +159,7 @@ footer {
 }
 
 .menu__fourth h2 {
-  font-family: "Kaushan Script", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Kaushan Script", Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: lighter;
 }
 .menu__fourth p {
@@ -253,7 +253,9 @@ button span:nth-child(3) {
 
 .menu__first {
   width: 22%;
-  height: 400px;
+  height: 0;
+  padding-top: 33%;
+  position: relative;
   background-color: #fcdfdb;
   display: flex;
   flex-direction: column;
@@ -267,18 +269,28 @@ button span:nth-child(3) {
 @media screen and (max-width: 991px) {
   .menu__first {
     width: 40%;
+    height: 0;
+    padding-top: 60%;
   }
 }
 @media screen and (max-width: 699px) {
   .menu__first {
     width: 80%;
+    height: 0;
+    padding-top: 120%;
   }
+}
+.menu__first a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 .menu__first p {
   color: #562f37;
 }
 .menu__first h2 {
-  margin-top: 0;
+  margin: 0;
   color: #562f37;
 }
 .menu__first i {
@@ -309,7 +321,9 @@ button span:nth-child(3) {
 
 .menu__second {
   width: 22%;
-  height: 400px;
+  height: 0;
+  padding-top: 33%;
+  position: relative;
   background-color: #fff5fe;
   font-size: 1.3rem;
   display: flex;
@@ -323,12 +337,22 @@ button span:nth-child(3) {
 @media screen and (max-width: 991px) {
   .menu__second {
     width: 40%;
+    height: 0;
+    padding-top: 60%;
   }
 }
 @media screen and (max-width: 699px) {
   .menu__second {
     width: 80%;
+    height: 0;
+    padding-top: 120%;
   }
+}
+.menu__second a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 .menu__second p {
   color: #c77412;
@@ -360,7 +384,9 @@ button span:nth-child(3) {
 .menu__third {
   background-color: #f9f9f9;
   width: 22%;
-  height: 400px;
+  height: 0;
+  padding-top: 33%;
+  position: relative;
   font-size: 2rem;
   text-align: center;
   display: flex;
@@ -373,12 +399,22 @@ button span:nth-child(3) {
 @media screen and (max-width: 991px) {
   .menu__third {
     width: 40%;
+    height: 0;
+    padding-top: 60%;
   }
 }
 @media screen and (max-width: 699px) {
   .menu__third {
     width: 80%;
+    height: 0;
+    padding-top: 120%;
   }
+}
+.menu__third a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 .menu__third p {
   color: #2795fb;
@@ -414,7 +450,9 @@ button span:nth-child(3) {
 .menu__fourth {
   background-color: #fdfffd;
   width: 22%;
-  height: 400px;
+  height: 0;
+  padding-top: 33%;
+  position: relative;
   font-size: 2rem;
   text-align: center;
   display: flex;
@@ -427,12 +465,22 @@ button span:nth-child(3) {
 @media screen and (max-width: 991px) {
   .menu__fourth {
     width: 40%;
+    height: 0;
+    padding-top: 60%;
   }
 }
 @media screen and (max-width: 699px) {
   .menu__fourth {
     width: 80%;
+    height: 0;
+    padding-top: 120%;
   }
+}
+.menu__fourth a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 }
 .menu__fourth p {
   color: #7dc463;
@@ -876,7 +924,7 @@ footer a:hover {
 }
 
 .section__header--variation3 {
-  font-family: "Dancing Script", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Dancing Script", Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   width: 100%;
   box-shadow: none;
   margin-bottom: 0;
@@ -963,7 +1011,7 @@ footer a:hover {
 }
 
 .section__header--variation4 {
-  font-family: "Kaushan Script", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Kaushan Script", Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   width: 100%;
   box-shadow: none;
   margin-bottom: 0;
