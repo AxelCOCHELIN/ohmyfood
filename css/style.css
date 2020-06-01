@@ -151,7 +151,7 @@ footer {
 }
 
 .menu__third h2 {
-  font-family: "Dancing Script", "Segoe print", Verdana, Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold";
+  font-family: "Dancing Script", "Segoe print", Verdana, Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold", ArialMT, Helvetica;
   font-weight: lighter;
 }
 .menu__third p {
@@ -159,7 +159,7 @@ footer {
 }
 
 .menu__fourth h2 {
-  font-family: "Kaushan Script", "Segoe print", Verdana, Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold";
+  font-family: "Kaushan Script", "Segoe print", Verdana, Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold", ArialMT, Helvetica;
   font-weight: lighter;
 }
 .menu__fourth p {
@@ -924,7 +924,7 @@ footer a:hover {
 }
 
 .section__header--variation3 {
-  font-family: "Dancing Script", "Segoe print", Verdana, Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold";
+  font-family: "Dancing Script", "Segoe print", Verdana, Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold", ArialMT, Helvetica;
   width: 100%;
   box-shadow: none;
   margin-bottom: 0;
@@ -1011,7 +1011,7 @@ footer a:hover {
 }
 
 .section__header--variation4 {
-  font-family: "Kaushan Script", "Segoe print", Verdana, Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold";
+  font-family: "Kaushan Script", "Segoe print", Verdana, Cambria, Cochin, Georgia, Times, "Times New Roman", Impact, Haettenschweiler, "Arial Narrow Bold", ArialMT, Helvetica;
   width: 100%;
   box-shadow: none;
   margin-bottom: 0;
